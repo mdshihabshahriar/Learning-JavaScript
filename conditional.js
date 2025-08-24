@@ -10,6 +10,7 @@ else
 }
 
 let color;
+
 let mode = "dark";
 
 if(mode == "dark")
