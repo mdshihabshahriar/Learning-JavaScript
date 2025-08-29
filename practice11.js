@@ -5,5 +5,6 @@ newBtn.style.backgroundColor = "red";
 
 document.querySelector("body").prepend(newBtn);
 
+
 let para = document.querySelector("p");
 para.classList.add("newClass");
