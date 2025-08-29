@@ -1,0 +1,18 @@
+body{
+    background-color: blanchedalmond;
+}
+button{
+    color: white;
+    background-color: purple;
+}
+.myClass{
+    color: blue;
+    background-color: yellowgreen;
+}
+#box{
+    height: 250px;
+    width: 100px;
+    background-color: dodgerblue;
+    color: white;
+    border: 1px solid black;
+}
