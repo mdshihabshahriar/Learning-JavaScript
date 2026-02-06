@@ -54,3 +54,5 @@ console.log(arr2);
 let arr3 = [1,2,3,4,5,6,7];
 arr3.splice(3,1);       // only delete
 console.log(arr3);
+console.log(arr3.includes(2));  // if element include in array return true
+console.log(Array.isArray(arr3));   // if array return true
