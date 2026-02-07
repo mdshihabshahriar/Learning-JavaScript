@@ -5,7 +5,7 @@ const output = arr.reduce((prev,curr)=>{
 })
 console.log(output);
 
-// find larget number
+// find largest number
 
 let num = [5,1,3,2,6];
 

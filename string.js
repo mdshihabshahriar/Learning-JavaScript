@@ -21,3 +21,14 @@ let str5 = " Shahriar";
 
 console.log(str4+str5);
 console.log(str4.concat(str5));
+console.log(str4.includes('S'));
+
+let str6 = 'I am a good boy'
+console.log(str6.split());
+console.log(str6.split(''));
+console.log(str6.split(' '));
+
+let friends = ['Rahim', 'Karim', 'Fahim'];
+console.log(friends.join());
+console.log(friends.join('|'));
+console.log(friends.join('-'));
