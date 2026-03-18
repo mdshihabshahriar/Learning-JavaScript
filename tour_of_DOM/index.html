@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour of DOM</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header>
+        <h1>This is my header</h1>
+    </header>
+    <main id="main-container">
+        <section id="description" class="main">
+            <h1>Welcome to my DOM</h1>
+            <p>Lorem ipsum dolor sit amet, <span>oli goli</span>consectetur adipisicing elit. Est consequuntur facere iste nulla <span>Alias</span>tempora dolore consectetur adipisci quas ratione maxime!</p>
+            <h1>anlkalnfwi <span>Some text</span></h1>
+            <ul>
+                <li>Shihab</li>
+                <li>Shahriar</li>
+            </ul>
+        </section>
+        <section class="food">
+            <h1 id="food-title">Foods I Love</h1>
+            <ul>
+                <li>Rice</li>
+                <li class="foreign">Chicken</li>
+                <li class="foreign">Meat</li>
+                <li id="food">Egg</li>
+                <li>Pasta</li>
+            </ul>
+        </section>
+        <section id="players-container">
+            <h1>Players</h1>
+            <ul id="player-list">
+                <li>Ronaldo</li>
+                <li>Messi</li>
+                <li>Neymar</li>
+                <li>Mbappe</li>
+            </ul>
+        </section>
+    </main>
+
+    <script>
+        //console.log("Hello!!")
+        //console.log("Hello!!")
+        //console.log("Document object model")
+
+        const student = {
+            name: 'Karim',
+            id: 121,
+            study: function(subject){
+                //console.log("Studying Subject: ", subject);
+            }
+        }
+
+        // all li tag
+        const liCollection = document.getElementsByTagName('li');
+        //console.log(liCollection);
+
+        for(const li of liCollection){
+            //console.log(li.innerText)
+        }
+
+        // all h1 tag
+        const allHeadings = document.getElementsByTagName('h1')
+        for(const h1 of allHeadings){
+            //console.log(h1.innerText)
+        }
+
+        // get by Id
+        const foodTitleH1 = document.getElementById("food-title")
+        //console.log(foodTitleH1.innerText)
+        foodTitleH1.innerText = "Foods I Love To Eat"
+
+        const foodItem = document.getElementById("food")
+        foodItem.innerText = "Biriyani"
+
+        // get elements by class name
+        const foreignElements = document.getElementsByClassName("foreign")
+        //console.log(foreignElements)
+
+        for(const element of foreignElements)
+        {
+            //console.log(element.innerText)
+        }
+
+        // querySelectorAll
+        const spanElements = document.querySelectorAll("#description p span")
+        for(const i of spanElements)
+        {
+            //console.log(i.innerText)
+        }
+
+    </script>
+    <script src="./js/hello.js"></script>
+    <script src="./js/cssInjs.js"></script>
+    <script src="./js/child.js"></script>
+    <script src="./js/append.js"></script>
+</body>
+</html>

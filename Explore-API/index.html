@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #post-container{
+            max-width: 1160px;
+            margin: 50px auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+            row-gap: 50px;
+        }
+        .post-card{
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 1px 1px 1px 1px gray;
+            height: 100%;
+        }
+        .post-card p{
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="loadData()">Load Data</button>
+    <button onclick="loadPost()">Load Posts</button>
+
+    <!-- <ol id="post-container"></ol> -->
+
+    <h1>All Post</h1>
+
+    <div id="post-container">
+        <div class="post-card">
+            <h2>This is sample</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus incidunt doloremque dolor alias sint? Enim ea odit reprehenderit sapiente tempora.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="posts.js"></script>
+</body>
+</html>
